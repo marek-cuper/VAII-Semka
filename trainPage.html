@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Main Page</title>
+  <link rel="stylesheet" href="trainPage.css">
+
+  <style>
+    body{
+      background: url("images/backgPixelSky.jpg")
+      no-repeat fixed;
+      background-size:cover;
+      padding-top: 45px;
+      padding-bottom: 10px;
+    }
+
+
+
+  </style>
+
+</head>
+<body>
+<div class="wholePage">
+  <div class="sidenav">
+    <a href="main.html">Home</a>
+    <a href="#">Character</a>
+    <a href="trainPage.html">Train</a>
+    <a href="#">Work</a>
+    <a href="#">Missions</a>
+    <a href="#">Statistic</a>
+    <a href="#">Map</a>
+    <a href="#">Settings</a>
+    <a href="loginPage.html">Logout</a>
+  </div>
+
+  <div class="registration">
+    <div class="row">
+      <div class="col">
+        <div class="trainBox">
+          <form action="main.html">
+
+            <div class="custom-select">
+              <select>
+                <option value="0">Select difficulty</option>
+                <option value="1">Light</option>
+                <option value="2">Medium</option>
+                <option value="3">Hard</option>
+                <option value="4">Extrem</option>
+              </select>
+            </div>
+            <div>
+              <table>
+                <tr>
+                  <th>Type</th>
+                  <th>Pause</th>
+                  <th>Strength get</th>
+                </tr>
+                <tr>
+                  <td>Light</td>
+                  <td>2h</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Medium</td>
+                  <td>4h</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Hard</td>
+                  <td>8h</td>
+                  <td>25</td>
+                </tr>
+                <tr>
+                  <td>Extrem</td>
+                  <td>24h</td>
+                  <td>40</td>
+                </tr>
+              </table>
+            </div>
+            <div>
+              <button type="submit">Train</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<div class="footer">
+
+  <div class="flex-container">
+    <div>
+      <div class="footerExplanations"><p>Player Name:</p></div>
+      <div class="footerValue"><p>NAME</p></div>
+    </div>
+    <div>
+      <div class="footerExplanations"><p>Health:</p></div>
+      <div class="footerValue"><progress id="health" value="100" max="100"></progress></div>
+    </div>
+    <div>
+      <div class="footerExplanations"><p>Energy:</p></div>
+      <div class="footerValue"><progress id="energy" value="100" max="100"></progress></div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <link rel="stylesheet" href="loginPage.css">
+  <style>
+    body{
+      background: url("images/backgPixelSky.jpg")
+      no-repeat fixed;
+      background-size:cover;
+      padding-top: 45px;
+      padding-bottom: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="loginnav">
+  <a class="navName">Magic e-World</a>
+  <div class="login-box">
+    <form action="main.html">
+      <input type="text" placeholder="Username" name="username">
+      <input type="text" placeholder="Password" name="psw">
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>
+
+<div class="registration">
+  <div class="row">
+    <div class="col">
+      <div class="regBox">
+        <form action="main.html">
+          <div>
+            <input type="text" placeholder="Username" name="username">
+          </div>
+          <div>
+            <input type="text" placeholder="Email" name="email">
+          </div>
+          <div>
+            <input type="password" placeholder="Password" id="psw1">
+          </div>
+          <div>
+            <input type="password" placeholder="Repeat Password" id="psw2">
+          </div>
+          <div class>
+
+            Show password<input class="checkbox" type="checkbox" onclick="myFunction()">
+          </div>
+          <div>
+            <button type="submit">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("psw1");
+        var y = document.getElementById("psw2");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+        if (y.type === "password") {
+          y.type = "text";
+        } else {
+          y.type = "password";
+        }
+      }
+    </script>
+</body>
+</html>
