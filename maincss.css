@@ -125,7 +125,7 @@
     height: 50%;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 40%;
     transform: translate(-50%, -50%);
 
 }
@@ -162,7 +162,7 @@
 }
 li{
     font-family: monospace;
-    margin: 1vh;
+    padding: 1vh 1vh 2vh 2vh;
     font-size: 3vh;
 }
 a{
